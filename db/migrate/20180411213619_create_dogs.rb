@@ -1,14 +1,14 @@
 class CreateDogs < ActiveRecord::Migration
 
-  def change 
+  def change
     create_table :dogs do |t|
-      t.string :name 
-      t.string :breed 
-    end 
+      t.string :name
+      t.string :breed
+    end
   end
-end 
+end
 
- #method listed above does the same as these 2 methods all by itself
+ #method listed above does the same as up. Rollback does the same as down
   #def up
     #create_table :dogs do |t|
       #t.string :name
